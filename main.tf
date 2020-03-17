@@ -2,7 +2,6 @@ resource "digitalocean_kubernetes_cluster" "main_cluster" {
   name    = var.name
   region  = var.region
   version = var.kubernetes_version
-  tags    = ["k8s"]
 
   node_pool {
     name       = var.node_pool_name
